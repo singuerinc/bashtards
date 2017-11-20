@@ -2,7 +2,11 @@ html, body {
   background-color: #111;
 }
 
-.link:focus {
+.post__body a {
+  color: #ff4136;
+}
+
+a, .link:focus {
   outline: 0;
 }
 

@@ -8,6 +8,7 @@ export default ({ data, pathContext }) => {
     <article>
       <header className="mb5">
         <span className="fw3 gray f5">{date}</span>
+        <span className="fw3 dark-gray f6"> by {post.frontmatter.author}</span>
         <h1 className="f1 fw3 mv1 db red">
           {post.frontmatter.title}{' '}
         </h1>
@@ -31,6 +32,7 @@ export const query = graphql`
       html
       frontmatter {
         title
+        author
         categories
       }
     }

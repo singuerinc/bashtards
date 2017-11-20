@@ -1,6 +1,6 @@
 ---
 title: "Alternative icons for Visual Studio Code"
-author: Nahuel Scotti
+author: singuerinc
 categories:
   - vscode
   - icons

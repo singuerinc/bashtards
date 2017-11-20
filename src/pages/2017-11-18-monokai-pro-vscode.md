@@ -1,6 +1,6 @@
 ---
 title: "Monokai Pro for Visual Studio Code"
-author: Nahuel Scotti
+author: ricardo
 categories:
   - vscode
   - theme

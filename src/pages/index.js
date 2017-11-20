@@ -15,6 +15,7 @@ export default ({ data }) => {
         <article key={node.id} className="mb4">
           <header>
             <span className="fw3 gray f5">{node.fields.date}</span>
+            <span className="fw3 dark-gray f6"> by {node.frontmatter.author}</span>
           </header>
           <section>
             <Link
@@ -43,6 +44,7 @@ export const query = graphql`
           id
           frontmatter {
             title
+            author
             categories
           }
           fields {

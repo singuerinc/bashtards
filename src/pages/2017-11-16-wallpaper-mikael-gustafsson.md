@@ -1,6 +1,6 @@
 ---
 title: "Wallpapers by Mikael Gustafsson"
-author: Nahuel Scotti
+author: ricardo
 categories:
   - wallpapers
 ---
