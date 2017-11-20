@@ -11,8 +11,8 @@ const Header = () => (
   <div>
     <div>
       <h1 className="f-subheadline-ns f1 lh-solid fw3 mt4 mb1">
-        <Link to="/" className="blog__title">
-          Camale&oacute;n
+        <Link to="/" className="silver link dim">
+          &gt; Bashtards
         </Link>
       </h1>
       <h2 className="f4 fw3 white-50 ma0">A blog about themes, wallpapers, fonts and editors for coders.</h2>
@@ -64,7 +64,7 @@ const TemplateWrapper = ({ children }) => (
       ]}
     />
     <Header />
-    <div className="mv4">{children()}</div>
+    <div className="mv5">{children()}</div>
     <div className="bg-white-10 w-100 db" style={{height: '1px'}}></div>
     <footer className="tc mv4">
       saaaape! - 2017

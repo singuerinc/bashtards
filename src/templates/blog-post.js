@@ -6,15 +6,14 @@ export default ({ data, pathContext }) => {
   const { date } = pathContext
   return (
     <article>
-      <header>
+      <header className="mb5">
         <span className="fw3 gray f5">{date}</span>
-        <h1 className="f3 fw3 f2-m fw2-m f2-l fw2-l mv1 db light-purple">
+        <h1 className="f1 fw3 mv1 db red">
           {post.frontmatter.title}{' '}
         </h1>
         <span className="f6 gray">
           {post.frontmatter.categories.join(', ')}
         </span>
-        <hr className="mv4 bb b--white-10" />
       </header>
       <section>
         <div

@@ -19,13 +19,13 @@ export default ({ data }) => {
           <section>
             <Link
               to={node.fields.slug}
-              className={"light-purple link fw3 fw2-m fw2-l mv1 db title-gradient dim " + getClassNameByPostIndex(index)}
+              className={"red link fw3 fw2-m fw2-l mv1 db dim " + getClassNameByPostIndex(index)}
             >
               {node.frontmatter.title}{' '}
             </Link>
           </section>
           <footer>
-            <span className="f6 moon-gray">
+            <span className="f6 white-10">
               {node.frontmatter.categories.join(', ')}
             </span>
           </footer>
