@@ -69,15 +69,6 @@ const TemplateWrapper = ({ children }) => (
     <footer className="tc mv4">
       saaaape! - 2017
     </footer>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-881783-19"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-881783-19');
-    </script>
-
   </div>
 )
 
