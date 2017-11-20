@@ -1,0 +1,45 @@
+html, body {
+  background-color: #111;
+}
+
+@keyframes changecolor {
+  from {
+    color: #ff4136;
+  }
+
+  to {
+    color: #5E2CA5;
+  }
+}
+
+.blog__title {
+  text-decoration: none;
+  animation-duration: 10s;
+  animation-name: changecolor;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.post__body a {
+  text-decoration: none;
+  color: #19a974;
+  font-weight: 300;
+}
+
+.link:focus {
+  outline: 0;
+}
+
+code {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+.post__body h1, .post__body h2, .post__body h3 {
+  font-weight: 300;
+}
+
+.post__body p code {
+  padding: 0 5px;
+  background-color: #9EEBCF;
+  color: #111;
+}
