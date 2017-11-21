@@ -1,9 +1,10 @@
 import React from 'react'
+import feather from 'feather-icons';
 
 export default ({ data, pathContext }) => {
-  console.log(pathContext)
   const post = data.markdownRemark
-  const { date } = pathContext
+  const { date, slug } = pathContext
+  const link = encodeURIComponent(`${location.origin}${slug}`);
   return (
     <article>
       <header className="mb5">
@@ -22,6 +23,12 @@ export default ({ data, pathContext }) => {
           dangerouslySetInnerHTML={{ __html: post.html }}
         />
       </section>
+      <sections>
+        <ul className="ma0 pa0 list">
+          <li className="ma2 dib"><a className="link dim dark-gray" href={`https://www.facebook.com/sharer/sharer.php?u=${link}`} target="_blank"><span dangerouslySetInnerHTML={{ __html: feather.icons.facebook.toSvg() }} /></a></li>
+          <li className="ma2 dib"><a className="link dim dark-gray" href={`https://twitter.com/home?status=${link}`} target="_blank"><span dangerouslySetInnerHTML={{ __html: feather.icons.twitter.toSvg() }} /></a></li>
+        </ul>
+      </sections>
     </article>
   )
 }

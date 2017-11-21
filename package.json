@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "author": "Nahuel Scotti <nahuel.scotti@gmail.com>",
   "dependencies": {
+    "feather-icons": "^4.0.1",
     "gatsby": "^1.9.80",
     "gatsby-link": "^1.6.21",
     "gatsby-plugin-google-analytics": "^1.0.10",

@@ -20,19 +20,19 @@ const Header = () => (
     </div>
   </div>
 )
-
 const TemplateWrapper = ({ children }) => (
   <div className="sans-serif dark-gray mh4 mh3 mw-100 mw7-l center-l">
     <Helmet
-      title="camaleon | blog"
+      title="> Bashtards"
       meta={[
         {
           name: 'description',
           content:
-            'Written by Nahuel and Ricardo who are always disappointed with their setups.',
+            'A blog about themes, wallpapers, fonts and editors for coders.',
         },
         { name: 'author', content: 'Nahuel Scotti' },
         { name: 'author', content: 'Ricardo Saiz' },
+        // FIXME: Add common image
         {
           property: 'og:image',
           content:
@@ -43,24 +43,24 @@ const TemplateWrapper = ({ children }) => (
         { property: 'og:image:height', content: '386" ' },
         { property: 'og:locale', content: 'en_US' },
         { property: 'og:type', content: 'article' },
-        { property: 'og:title', content: 'Camaleon' },
+        { property: 'og:title', content: '> Bashtards' },
         {
           property: 'og:description',
           content:
-            'Written by Nahuel and Ricardo who are always disappointed with their setups.',
+            'A blog about themes, wallpapers, fonts and editors for coders.',
         },
-        { property: 'og:url', content: '' },
-        { property: 'og:site_name', content: 'Camaleon' },
+        { property: 'og:url', content: location.href },
+        { property: 'og:site_name', content: '> Bashtards' },
         { property: 'fb:app_id', content: '1774104969502286' },
         { name: 'twitter:card', content: 'summary' },
-        { name: 'twitter:site', content: 'Camaleon' },
-        { name: 'twitter:title', content: 'Camaleon' },
+        { name: 'twitter:site', content: '> Bashtards' },
+        { name: 'twitter:title', content: '> Bashtards' },
         {
           name: 'twitter:description',
           content:
-            'Written by Nahuel and Ricardo who are always disappointed with their setups.',
+            'A blog about themes, wallpapers, fonts and editors for coders.',
         },
-        { name: 'twitter:url', content: '' },
+        { name: 'twitter:url', content: location.href },
       ]}
     />
     <Header />
