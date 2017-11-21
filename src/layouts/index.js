@@ -22,6 +22,8 @@ const Header = () => (
   </div>
 )
 const TemplateWrapper = ({ children }) => {
+  const home = `https://camaleon.singuerinc.com`;
+
   return (
     <div className="sans-serif dark-gray mh4 mh3 mw-100 mw7-l center-l">
       <Helmet
