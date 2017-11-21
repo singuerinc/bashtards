@@ -6,10 +6,11 @@ export default ({ data, pathContext }) => {
   const post = data.markdownRemark
   const { date, slug } = pathContext
   const link = encodeURIComponent(`https://camaleon.singuerinc.com/${slug}`);
+  const hashtag = encodeURIComponent(`#bashtards`);
   return (
     <article>
       <Helmet
-      title="> Bashtards"
+      title={`${post.frontmatter.title} > Bashtards`}
       meta={[
         { property: 'og:url', content: `https://camaleon.singuerinc.com/${slug}` },
         { name: 'twitter:url', content: `https://camaleon.singuerinc.com/${slug}` },
@@ -32,10 +33,11 @@ export default ({ data, pathContext }) => {
         />
       </section>
       <sections>
-        <ul className="ma0 pa0 list">
-          <li className="ma2 dib"><a className="link dim dark-gray" href={`https://www.facebook.com/sharer/sharer.php?u=${link}`} target="_blank"><span dangerouslySetInnerHTML={{ __html: feather.icons.facebook.toSvg() }} /></a></li>
-          <li className="ma2 dib"><a className="link dim dark-gray" href={`https://twitter.com/home?status=${link}`} target="_blank"><span dangerouslySetInnerHTML={{ __html: feather.icons.twitter.toSvg() }} /></a></li>
-        </ul>
+        <h4 className="ma0 mt4 pa0 tc">Share this brashtard</h4>
+        <div className="flex justify-center pv3">
+          <a className="dib link dim dark-gray mr3 tr" href={`https://www.facebook.com/sharer/sharer.php?u=${link}+${hashtag}`} target="_blank"><span dangerouslySetInnerHTML={{ __html: feather.icons.facebook.toSvg() }} /></a>
+          <a className="dib link dim dark-gray ml3 tl" href={`https://twitter.com/home?status=${link}+${hashtag}`} target="_blank"><span dangerouslySetInnerHTML={{ __html: feather.icons.twitter.toSvg() }} /></a>
+        </div>
       </sections>
     </article>
   )

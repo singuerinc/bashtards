@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
+import feather from 'feather-icons'
 
 import 'tachyons'
 import 'syntax-highlighting/assets/css/prism/prism-base16-ateliercave.light.css'
@@ -20,57 +21,59 @@ const Header = () => (
     </div>
   </div>
 )
-const TemplateWrapper = ({ children }) => (
-  <div className="sans-serif dark-gray mh4 mh3 mw-100 mw7-l center-l">
-    <Helmet
-      title="> Bashtards"
-      meta={[
-        {
-          name: 'description',
-          content:
-            'A blog about themes, wallpapers, fonts and editors for coders.',
-        },
-        { name: 'author', content: 'Nahuel Scotti' },
-        { name: 'author', content: 'Ricardo Saiz' },
-        // FIXME: Add common image
-        {
-          property: 'og:image',
-          content:
-            '',
-        },
-        { property: 'og:image:type', content: 'image/jpg' },
-        { property: 'og:image:width', content: '816" ' },
-        { property: 'og:image:height', content: '386" ' },
-        { property: 'og:locale', content: 'en_US' },
-        { property: 'og:type', content: 'article' },
-        { property: 'og:title', content: '> Bashtards' },
-        {
-          property: 'og:description',
-          content:
-            'A blog about themes, wallpapers, fonts and editors for coders.',
-        },
-        { property: 'og:url', content: 'https://camaleon.singuerinc.com' },
-        { property: 'og:site_name', content: '> Bashtards' },
-        { property: 'fb:app_id', content: '1774104969502286' },
-        { name: 'twitter:card', content: 'summary' },
-        { name: 'twitter:site', content: '> Bashtards' },
-        { name: 'twitter:title', content: '> Bashtards' },
-        {
-          name: 'twitter:description',
-          content:
-            'A blog about themes, wallpapers, fonts and editors for coders.',
-        },
-        { name: 'twitter:url', content: 'https://camaleon.singuerinc.com' },
-      ]}
-    />
-    <Header />
-    <div className="mv5">{children()}</div>
-    <div className="bg-white-10 w-100 db" style={{height: '1px'}}></div>
-    <footer className="tc mv4">
-      saaaape! - 2017
-    </footer>
-  </div>
-)
+const TemplateWrapper = ({ children }) => {
+  return (
+    <div className="sans-serif dark-gray mh4 mh3 mw-100 mw7-l center-l">
+      <Helmet
+        title="> Bashtards"
+        meta={[
+          {
+            name: 'description',
+            content:
+              'A blog about themes, wallpapers, fonts and editors for coders.',
+          },
+          { name: 'author', content: 'Nahuel Scotti' },
+          { name: 'author', content: 'Ricardo Saiz' },
+          // FIXME: Add common image
+          {
+            property: 'og:image',
+            content:
+              '',
+          },
+          { property: 'og:image:type', content: 'image/jpg' },
+          { property: 'og:image:width', content: '816" ' },
+          { property: 'og:image:height', content: '386" ' },
+          { property: 'og:locale', content: 'en_US' },
+          { property: 'og:type', content: 'article' },
+          { property: 'og:title', content: '> Bashtards' },
+          {
+            property: 'og:description',
+            content:
+              'A blog about themes, wallpapers, fonts and editors for coders.',
+          },
+          { property: 'og:url', content: home },
+          { property: 'og:site_name', content: '> Bashtards' },
+          { property: 'fb:app_id', content: '1774104969502286' },
+          { name: 'twitter:card', content: 'summary' },
+          { name: 'twitter:site', content: '> Bashtards' },
+          { name: 'twitter:title', content: '> Bashtards' },
+          {
+            name: 'twitter:description',
+            content:
+              'A blog about themes, wallpapers, fonts and editors for coders.',
+          },
+          { name: 'twitter:url', content: home },
+        ]}
+      />
+      <Header />
+      <div className="mt5 mb2">{children()}</div>
+      <div className="bg-white-10 w-100 db" style={{height: '1px'}}></div>
+      <footer className="tc mv4">
+          <div className="f5">saaaape! - 2017</div>
+      </footer>
+    </div>
+  )
+}
 
 TemplateWrapper.propTypes = {
   children: PropTypes.func,
