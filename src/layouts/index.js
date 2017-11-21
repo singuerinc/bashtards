@@ -49,7 +49,7 @@ const TemplateWrapper = ({ children }) => (
           content:
             'A blog about themes, wallpapers, fonts and editors for coders.',
         },
-        { property: 'og:url', content: location.href },
+        { property: 'og:url', content: 'https://camaleon.singuerinc.com' },
         { property: 'og:site_name', content: '> Bashtards' },
         { property: 'fb:app_id', content: '1774104969502286' },
         { name: 'twitter:card', content: 'summary' },
@@ -60,7 +60,7 @@ const TemplateWrapper = ({ children }) => (
           content:
             'A blog about themes, wallpapers, fonts and editors for coders.',
         },
-        { name: 'twitter:url', content: location.href },
+        { name: 'twitter:url', content: 'https://camaleon.singuerinc.com' },
       ]}
     />
     <Header />

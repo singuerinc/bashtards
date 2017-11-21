@@ -1,12 +1,20 @@
 import React from 'react'
-import feather from 'feather-icons';
+import feather from 'feather-icons'
+import Helmet from 'react-helmet'
 
 export default ({ data, pathContext }) => {
   const post = data.markdownRemark
   const { date, slug } = pathContext
-  const link = encodeURIComponent(`${location.origin}${slug}`);
+  const link = encodeURIComponent(`https://camaleon.singuerinc.com/${slug}`);
   return (
     <article>
+      <Helmet
+      title="> Bashtards"
+      meta={[
+        { property: 'og:url', content: `https://camaleon.singuerinc.com/${slug}` },
+        { name: 'twitter:url', content: `https://camaleon.singuerinc.com/${slug}` },
+      ]}
+    />
       <header className="mb5">
         <span className="fw3 gray f5">{date}</span>
         <span className="fw3 dark-gray f6"> by {post.frontmatter.author}</span>
