@@ -18,6 +18,13 @@ const Header = () => (
       </h1>
       <h2 className="f4 fw3 white-50 ma0">A blog about themes, wallpapers, fonts and editors for coders.</h2>
       <h3 className="f6 fw4 ma0 mt1">Written by <a className="link dim dark-gray" href="https://twitter.com/singuerinc" target="_blank">Nahuel</a> and Ricardo, who are always disappointed with their setups.</h3>
+
+      <nav className="list mt4 pa0">
+        <a href="/themes" target="_self" className="link dim dib green pa0 mr2">Themes</a>
+        <a href="/icons" target="_self" className="link dim dib green pa0 mr2">Icons</a>
+        <a href="/fonts" target="_self" className="link dim dib green pa0 mr2">Fonts</a>
+        <a href="/wallpapers" target="_self" className="link dim dib green pa0 mr2">Wallpapers</a>
+      </nav>
     </div>
   </div>
 )
