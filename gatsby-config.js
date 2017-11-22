@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Bashtards`,
     description: `A blog about themes, wallpapers, fonts and editors for coders.`,
-    siteUrl: `https://camaleon.singuerinc.com`
+    siteUrl: `https://www.bashtards.com`
   },
   plugins: [
     {

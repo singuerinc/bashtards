@@ -5,15 +5,15 @@ import Helmet from 'react-helmet'
 export default ({ data, pathContext }) => {
   const post = data.markdownRemark
   const { date, slug } = pathContext
-  const link = encodeURIComponent(`https://camaleon.singuerinc.com/${slug}`);
+  const link = encodeURIComponent(`https://www.bashtards.com/${slug}`);
   const hashtag = encodeURIComponent(`#bashtards`);
   return (
     <article>
       <Helmet
       title={`${post.frontmatter.title} > Bashtards`}
       meta={[
-        { property: 'og:url', content: `https://camaleon.singuerinc.com/${slug}` },
-        { name: 'twitter:url', content: `https://camaleon.singuerinc.com/${slug}` },
+        { property: 'og:url', content: `https://www.bashtards.com/${slug}` },
+        { name: 'twitter:url', content: `https://www.bashtards.com/${slug}` },
       ]}
     />
       <header className="mb5">
