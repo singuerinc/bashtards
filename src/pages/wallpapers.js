@@ -2,13 +2,13 @@ import React from 'react'
 import PostList from '../components/PostList';
 
 export default ({ data }) => {
-  return (<PostList data={data} themeColor="green" />)
+  return (<PostList data={data} themeColor="blue" />)
 }
 
 export const query = graphql`
-  query ThemesQuery {
+  query WallpapersQuery {
     allMarkdownRemark(
-      filter: { frontmatter: {categories: {eq: "theme" }}},
+      filter: { frontmatter: {categories: {eq: "wallpaper" }}},
       sort:{ order: DESC, fields: [fields___date] }
     ) {
       edges {

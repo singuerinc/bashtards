@@ -1,8 +1,11 @@
 {
   "name": "bashtards",
-  "description": "A blog about themes, wallpapers, fonts and editors, written Nahuel Scotti and Ricardo Saiz who are always disappointed with their themes.",
+  "description": "",
   "version": "1.0.0",
-  "author": "Nahuel Scotti <nahuel.scotti@gmail.com>",
+  "authors": [
+    "Nahuel Scotti <nahuel.scotti@gmail.com>",
+    "Ricardo Saiz <ricardo.saiz@gmail.com>"
+  ],
   "dependencies": {
     "feather-icons": "^4.0.1",
     "gatsby": "^1.9.80",
@@ -18,10 +21,10 @@
     "tachyons": "^4.8.1"
   },
   "keywords": [
-    "theme",
-    "editor",
-    "wallpaper",
-    "fonts"
+    "themes",
+    "icons",
+    "fonts",
+    "wallpapers"
   ],
   "main": "n/a",
   "scripts": {

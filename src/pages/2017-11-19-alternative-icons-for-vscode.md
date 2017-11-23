@@ -3,7 +3,7 @@ title: "Alternative icons for Visual Studio Code"
 author: singuerinc
 categories:
   - vscode
-  - icons
+  - icon
   - editor
 ---
 

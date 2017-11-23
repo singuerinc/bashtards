@@ -1,8 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Bashtards`,
-    description: `A blog about themes, wallpapers, fonts and editors for coders.`,
-    siteUrl: `https://www.bashtards.com`
+    title: `> Bashtards`,
+    description: `A blog about themes, wallpapers, fonts, icons, and stuff for coders`,
+    siteUrl: `https://www.bashtards.com`,
+    hashtag: `#bashtards`
   },
   plugins: [
     {

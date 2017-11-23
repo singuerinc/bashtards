@@ -3,7 +3,7 @@ title: "Monospaced font selection"
 author: singuerinc
 layout: post
 categories:
-  - fonts
+  - font
   - monospaced
   - fixed width
 ---

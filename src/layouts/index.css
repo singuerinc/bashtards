@@ -23,3 +23,16 @@ code {
   background-color: #9EEBCF;
   color: #111;
 }
+
+@keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #ff4136;
+  }
+}
+
+.cursor-bashtard {
+  animation: 1.2s blink step-end infinite;
+}

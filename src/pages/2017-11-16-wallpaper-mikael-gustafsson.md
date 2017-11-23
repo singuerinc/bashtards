@@ -2,7 +2,7 @@
 title: "Wallpaper by Mikael Gustafsson"
 author: ricardo
 categories:
-  - wallpapers
+  - wallpaper
 ---
 
 Awesome wallpaper by Mikael Gustafsson. They look great on my 15" MacBook Retina display!

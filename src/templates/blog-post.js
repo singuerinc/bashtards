@@ -3,17 +3,18 @@ import feather from 'feather-icons'
 import Helmet from 'react-helmet'
 
 export default ({ data, pathContext }) => {
+  const { siteUrl, hashtag } = data.site.siteMetadata;
   const post = data.markdownRemark
   const { date, slug } = pathContext
-  const link = encodeURIComponent(`https://www.bashtards.com/${slug}`);
-  const hashtag = encodeURIComponent(`#bashtards`);
+  const link = encodeURIComponent(`${siteUrl}/${slug}`);
+  const htag = encodeURIComponent(hashtag);
   return (
     <article>
       <Helmet
       title={`${post.frontmatter.title} > Bashtards`}
       meta={[
-        { property: 'og:url', content: `https://www.bashtards.com/${slug}` },
-        { name: 'twitter:url', content: `https://www.bashtards.com/${slug}` },
+        { property: 'og:url', content: `${siteUrl}/${slug}` },
+        { name: 'twitter:url', content: `${siteUrl}/${slug}` },
       ]}
     />
       <header className="mb5">
@@ -35,8 +36,8 @@ export default ({ data, pathContext }) => {
       <sections>
         <h4 className="ma0 mt4 pa0 tc">Share this bashtard</h4>
         <div className="flex justify-center pv3">
-          <a className="dib link dim dark-gray mr3 tr" href={`https://www.facebook.com/sharer/sharer.php?u=${link}+${hashtag}`} target="_blank"><span dangerouslySetInnerHTML={{ __html: feather.icons.facebook.toSvg() }} /></a>
-          <a className="dib link dim dark-gray ml3 tl" href={`https://twitter.com/home?status=${link}+${hashtag}`} target="_blank"><span dangerouslySetInnerHTML={{ __html: feather.icons.twitter.toSvg() }} /></a>
+          <a className="dib link dim dark-gray mr3 tr" href={`https://www.facebook.com/sharer/sharer.php?u=${link}+${htag}`} target="_blank"><span dangerouslySetInnerHTML={{ __html: feather.icons.facebook.toSvg() }} /></a>
+          <a className="dib link dim dark-gray ml3 tl" href={`https://twitter.com/home?status=${link}+${htag}`} target="_blank"><span dangerouslySetInnerHTML={{ __html: feather.icons.twitter.toSvg() }} /></a>
         </div>
       </sections>
     </article>
@@ -45,6 +46,14 @@ export default ({ data, pathContext }) => {
 
 export const query = graphql`
   query BlogPostQuery($slug: String!) {
+    site {
+      siteMetadata {
+        title
+        description
+        siteUrl
+        hashtag
+      }
+    },
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       frontmatter {
