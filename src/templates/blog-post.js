@@ -9,7 +9,7 @@ export default ({ data, pathContext }) => {
   const title = encodeURIComponent(post.frontmatter.title);
   const link = encodeURIComponent(`${siteUrl}/${slug}`);
   const htag = encodeURIComponent(hashtag);
-  const shareTxt = `${title}+${link}+${hashtag}`;
+  const shareTxt = `${title}+${link}+${htag}`;
   return (
     <article>
       <Helmet
