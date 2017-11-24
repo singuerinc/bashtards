@@ -9,9 +9,9 @@ categories:
 
 Simple, Bright and Elegant theme for Visual Studio Code.
 
-![Ayu Mirage](/2017-11-22-ayu-mirage-for-vscode/ayu-2.png)
+<img src="/2017-11-22-ayu-mirage-for-vscode/ayu-2.png" alt="Ayu Mirage" title="Ayu Mirage" class="w-100" />
 
-![Ayu Mirage](/2017-11-22-ayu-mirage-for-vscode/ayu-1.png)
+<img src="/2017-11-22-ayu-mirage-for-vscode/ayu-1.png" alt="Ayu Mirage" title="Ayu Mirage" class="w-100" />
 
 You've a darker alternative of Ayu Mirage included.
 

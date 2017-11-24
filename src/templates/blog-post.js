@@ -22,7 +22,7 @@ export default ({ data, pathContext }) => {
         { name: 'twitter:url', content: `${siteUrl}${slug}` }
       ]}
     />
-      <header className="mb5">
+      <header className="mb4">
         <span className="fw3 gray f5">{date}</span>
         <span className="fw3 dark-gray f6"> by {post.frontmatter.author}</span>
         <h1 className="f1 fw2 mv1 db green">
