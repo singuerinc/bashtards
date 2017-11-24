@@ -7,18 +7,19 @@ export default ({ data, pathContext }) => {
   const post = data.markdownRemark
   const { date, slug } = pathContext
   const title = encodeURIComponent(post.frontmatter.title);
-  const link = encodeURIComponent(`${siteUrl}/${slug}`);
+  const link = encodeURIComponent(`${siteUrl}${slug}`);
   const htag = encodeURIComponent(hashtag);
   const shareTxt = `${title}+${link}+${htag}`;
+  console.log(slug)
   return (
     <article>
       <Helmet
       title={`${post.frontmatter.title} > Bashtards`}
       meta={[
-        { property: 'og:title', content: title },
-        { property: 'og:url', content: `${siteUrl}/${slug}` },
-        { name: 'twitter:title', content: title },
-        { name: 'twitter:url', content: `${siteUrl}/${slug}` }
+        { property: 'og:title', content: post.frontmatter.title },
+        { property: 'og:url', content: `${siteUrl}${slug}` },
+        { name: 'twitter:title', content: post.frontmatter.title },
+        { name: 'twitter:url', content: `${siteUrl}${slug}` }
       ]}
     />
       <header className="mb5">
