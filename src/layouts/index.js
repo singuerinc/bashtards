@@ -44,8 +44,8 @@ const TemplateWrapper = (props) => {
           // FIXME: Add common image
           { property: 'og:image', content: '' },
           { property: 'og:image:type', content: 'image/jpg' },
-          { property: 'og:image:width', content: '816" ' },
-          { property: 'og:image:height', content: '386" ' },
+          { property: 'og:image:width', content: '816' },
+          { property: 'og:image:height', content: '386' },
           { property: 'og:locale', content: 'en_US' },
           { property: 'og:type', content: 'article' },
           { property: 'og:title', content: title },

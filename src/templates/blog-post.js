@@ -6,15 +6,19 @@ export default ({ data, pathContext }) => {
   const { siteUrl, hashtag } = data.site.siteMetadata;
   const post = data.markdownRemark
   const { date, slug } = pathContext
+  const title = encodeURIComponent(post.frontmatter.title);
   const link = encodeURIComponent(`${siteUrl}/${slug}`);
   const htag = encodeURIComponent(hashtag);
+  const shareTxt = `${title}+${link}+${hashtag}`;
   return (
     <article>
       <Helmet
       title={`${post.frontmatter.title} > Bashtards`}
       meta={[
+        { property: 'og:title', content: title },
         { property: 'og:url', content: `${siteUrl}/${slug}` },
-        { name: 'twitter:url', content: `${siteUrl}/${slug}` },
+        { name: 'twitter:title', content: title },
+        { name: 'twitter:url', content: `${siteUrl}/${slug}` }
       ]}
     />
       <header className="mb5">
@@ -36,8 +40,8 @@ export default ({ data, pathContext }) => {
       <sections>
         <h4 className="ma0 mt4 pa0 tc">Share this bashtard</h4>
         <div className="flex justify-center pv3">
-          <a className="dib link dim dark-gray mr3 tr" href={`https://www.facebook.com/sharer/sharer.php?u=${link}+${htag}`} target="_blank"><span dangerouslySetInnerHTML={{ __html: feather.icons.facebook.toSvg() }} /></a>
-          <a className="dib link dim dark-gray ml3 tl" href={`https://twitter.com/home?status=${link}+${htag}`} target="_blank"><span dangerouslySetInnerHTML={{ __html: feather.icons.twitter.toSvg() }} /></a>
+          <a className="dib link dim dark-gray mr3 tr" href={`https://www.facebook.com/sharer/sharer.php?u=${shareTxt}`} target="_blank"><span dangerouslySetInnerHTML={{ __html: feather.icons.facebook.toSvg() }} /></a>
+          <a className="dib link dim dark-gray ml3 tl" href={`https://twitter.com/home?status=${shareTxt}`} target="_blank"><span dangerouslySetInnerHTML={{ __html: feather.icons.twitter.toSvg() }} /></a>
         </div>
       </sections>
     </article>
