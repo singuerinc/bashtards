@@ -5,7 +5,7 @@ categories:
   - wallpaper
 ---
 
-Beautiful winter wallpaper, look how nice it look in at wide display:
+Beautiful winter wallpaper. Look how nice it looks in this wide display (photo by [sebofdoom](https://www.reddit.com/user/sebofdoom/)):
 
 ![Winter Fox Wallpaper](/2017-11-28-wallpaper-winter-fox/wallpaper-1.jpg)
 
