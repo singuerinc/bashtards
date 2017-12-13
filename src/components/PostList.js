@@ -1,14 +1,17 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React from 'react';
+import Link from 'gatsby-link';
 
-export default ({ data, themeColor="white" }) => {
+export default ({ data, themeColor = 'white' }) => {
   return (
     <div>
       {data.allMarkdownRemark.edges.map(({ node }, index) => (
         <article key={node.id} className="mb4">
           <header>
             <span className="fw3 gray f5">{node.fields.date}</span>
-            <span className="fw3 dark-gray f6"> by {node.frontmatter.author}</span>
+            <span className="fw3 dark-gray f6">
+              {' '}
+              by {node.frontmatter.author}
+            </span>
           </header>
           <section>
             <Link
@@ -19,12 +22,14 @@ export default ({ data, themeColor="white" }) => {
             </Link>
           </section>
           <footer>
-            <span className="f6 white-10">
-              {node.frontmatter.categories.join(', ')}
-            </span>
+            {node.frontmatter.categories.map(category => (
+              <span className="f7 white-20 br1 pv1 ph2 bg-white-10 mr1">
+                {category}
+              </span>
+            ))}
           </footer>
         </article>
       ))}
     </div>
-  )
-}
+  );
+};
