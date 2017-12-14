@@ -22,8 +22,8 @@ export default ({ data, themeColor = 'white' }) => {
             </Link>
           </section>
           <footer>
-            {node.frontmatter.categories.map(category => (
-              <span className="f7 white-20 br1 pv1 ph2 bg-white-10 mr1">
+            {node.frontmatter.categories.map((category, index) => (
+              <span key={index} className="f7 white-20 br1 pv1 ph2 bg-white-10 mr1">
                 {category}
               </span>
             ))}

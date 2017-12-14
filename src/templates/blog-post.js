@@ -10,7 +10,6 @@ export default ({ data, pathContext }) => {
   const link = encodeURIComponent(`${siteUrl}${slug}`);
   const htag = encodeURIComponent(hashtag);
   const shareTxt = `${title}+${link}+${htag}`;
-  console.log(slug)
   return (
     <article>
       <Helmet

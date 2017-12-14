@@ -11,7 +11,7 @@ a, .link:focus {
 }
 
 code {
-  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-family: Menlo, "Hack", "SFMono-Regular", Consolas, "Liberation Mono", Courier, monospace;
 }
 
 .post__body h1, .post__body h2, .post__body h3 {
@@ -20,8 +20,8 @@ code {
 
 .post__body p code {
   padding: 0 5px;
-  background-color: #9EEBCF;
-  color: #111;
+  background-color: #333;
+  color: #666;
 }
 
 @keyframes blink {
