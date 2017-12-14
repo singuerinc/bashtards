@@ -8,7 +8,7 @@ categories:
 
 1. [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync)
 
-    If you have two computers, or we switch between VS Code and VS Code Insiders you need this extension. It synchronize the whole editor's configuration. It also install/uninstall the extensions. 100% recommended.
+    If you have two computers, or you switch between VS Code and VS Code Insiders you need this extension. It synchronize the whole editor's configuration. It also install/uninstall the extensions. 100% recommended.
 
     Cons: Sometimes you get some conflicts with the configuration during upload/download.
 
@@ -20,13 +20,13 @@ categories:
 
 1. [Git Lens](https://github.com/eamodio/vscode-gitlens)
 
-    If you work with git (someone here that still with SVN? xD) this is a must. It adds tons of git extra tools to VS Code.
+    You work with git right? OK, this one it's a must. It adds tons of git extra tools to VS Code.
 
 1. [Prettier - Code formatter](https://prettier.io/)
 
     ![Prettier](/2017-12-20-vs-code-extensions/prettier.png)
 
-    Don't worry any more about removing extra spaces, fix that indentation... Define how to format your code and let Prettier to do the rest. Set `editor.formatOnSave: true` and you get auto-formatting.
+    Don't worry any more about removing extra spaces, fix that indentation, etc. Define how to format your code and let Prettier do the rest. Tip: set Code to format on save with `editor.formatOnSave: true`.
 
 1. [ESLint](https://github.com/Microsoft/vscode-eslint) / [TSLint](https://github.com/Microsoft/vscode-tslint)
 
