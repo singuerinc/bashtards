@@ -57,9 +57,9 @@ categories:
 
 ## Bonus
 
-1. Vetur
+1. [Vetur](https://github.com/vuejs/vetur)
 
-    Everyone is talking about React, but there is a lot of people also working with Vue.js, if you are one of those this is the perfect companion for you: [Vetur](https://github.com/vuejs/vetur), it adds: syntax-highlighting, snippets, emmet, linting and error checking, formatting, auto completion and debugging.
+    Everyone is talking about React, but there is a lot of people also working with Vue.js, if you are one of those this is the perfect companion for you: Vetur adds: syntax-highlighting, snippets, emmet, linting and error checking, formatting, auto completion and debugging.
 
 1. [vscode-styled-components](https://github.com/styled-components/vscode-styled-components)
 
