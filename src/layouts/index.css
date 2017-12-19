@@ -1,38 +1,49 @@
-html, body {
-  background-color: #111;
+html,
+body {
+	background-color: #111;
 }
 
 .post__body a {
-  color: #ff4136;
+	color: #ff4136;
 }
 
-a, .link:focus {
-  outline: 0;
+a,
+.link:focus {
+	outline: 0;
+}
+
+code[class*='language-'],
+pre[class*='language-'] {
+	background: #222;
 }
 
 code {
-  font-family: Menlo, "Hack", "SFMono-Regular", Consolas, "Liberation Mono", Courier, monospace;
+	font-family: Menlo, 'Hack', 'SFMono-Regular', Consolas, 'Liberation Mono',
+		Courier, monospace;
 }
 
-.post__body h1, .post__body h2, .post__body h3 {
-  font-weight: 300;
+.post__body h1,
+.post__body h2,
+.post__body h3 {
+	font-weight: 300;
 }
 
 .post__body p code {
-  padding: 0 5px;
-  background-color: #333;
-  color: #666;
+	padding: 0 5px;
+	background-color: #333;
+	color: #666;
 }
 
 @keyframes blink {
-  from, to {
-    color: transparent;
-  }
-  50% {
-    color: #ff4136;
-  }
+	from,
+	to {
+		color: transparent;
+	}
+	50% {
+		color: #ff4136;
+	}
 }
 
 .cursor-bashtard {
-  animation: 1.2s blink step-end infinite;
+	animation: 1.2s blink step-end infinite;
 }

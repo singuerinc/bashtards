@@ -14,17 +14,17 @@ categories:
 
     You should avoid spaghetti code, callback hell, and files with more than 60 lines of code. But in some cases you need an extra help to see where the f*** that statement ends. Bracket adds extra colors to identify clearly that.
 
-    ![Bracket Pair Colorizer](/2017-12-20-vs-code-extensions/bracket-pair-colorizer.png)
+    ![Bracket Pair Colorizer](/2017-12-17-vs-code-extensions/bracket-pair-colorizer.png)
 
 1. [Git Lens](https://github.com/eamodio/vscode-gitlens)
 
     You work with git right? OK, this one it's a must. It adds tons of git extra tools to VS Code.
 
-    ![Git Lens](/2017-12-20-vs-code-extensions/git-lens.png)
+    ![Git Lens](/2017-12-17-vs-code-extensions/git-lens.png)
 
 1. [Prettier - Code formatter](https://prettier.io/)
 
-    ![Prettier](/2017-12-20-vs-code-extensions/prettier.png)
+    ![Prettier](/2017-12-17-vs-code-extensions/prettier.png)
 
     Don't worry any more about removing extra spaces, fix that indentation, etc. Define how to format your code and let Prettier do the rest. Tip: set Code to format on save with `editor.formatOnSave: true`.
 
@@ -44,7 +44,7 @@ categories:
 
     Debug your JavaScript code in the Google Chrome browser.
 
-    ![Chrome](/2017-12-20-vs-code-extensions/chrome.png)
+    ![Chrome](/2017-12-17-vs-code-extensions/chrome.png)
 
 1. [Vim](https://github.com/VSCodeVim/Vim)
 
