@@ -1,9 +1,15 @@
-import React from 'react'
-import PostList from '../components/PostList';
+import { graphql } from "gatsby";
+import React from "react";
+import Layout from "../components/layout";
+import PostList from "../components/PostList";
 
 export default ({ data }) => {
-  return (<PostList data={data} themeColor="red" />)
-}
+  return (
+    <Layout>
+      <PostList data={data} themeColor="red" />
+    </Layout>
+  );
+};
 
 export const query = graphql`
   query IndexQuery {
@@ -24,4 +30,4 @@ export const query = graphql`
       }
     }
   }
-`
+`;
